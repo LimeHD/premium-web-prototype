@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Телепрограмма</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"> </head>
+
+<body>
+    <header class="clearfix mb-3 p-3">
+        <nav class="navbar navbar-main navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="logo" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"> <a class="nav-link " href="index.html">Цифровое ТВ</a> </li>
+                        <li class="nav-item"> <a class="nav-link active" href="tv.html">Телепрограмма</a> </li>
+                        <li class="nav-item"> <a class="nav-link " href="channel.html">Передача</a> </li>
+                        <!--
+                    <li class="nav-item"> <a class="nav-link" href="#">Фильмы</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Актёры</a> </li>
+                    -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand tv-channel-filter pt-0 mt-0 mb-2">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"> <a class="nav-link" href="#">Пн-10</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Вт-11</a> </li>
+                        <li class="nav-item active"> <a class="nav-link" href="#">Сегодня</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Чт-13</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Пт-14</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Сб-15</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Вс-16</a> </li>
+                    </ul>
+            </div>
+            <div class="tv-channel-list row">
+                <div class="col-xs-1 col-sm-4 col-md-4 col-xl-2">
+                    <div class="card border-0 rounded-0 mb-4 tv-channel">
+                        <div class="tv-channel-title">
+                            <a class="d-flex align-items-center" href="#"><img class="mr-2" src="images/rossia1_logo.png" alt="">Россия 1</a>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">06:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Русское лото</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">07:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Пусть говорят</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start active">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">09:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Каникулы</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">12:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Х/ф Холоп</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">13:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Судьба человека с&nbsp;Борисом Корчевниковым</a></span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-sm-4 col-md-4 col-xl-2">
+                    <div class="card border-0 rounded-0 mb-4 tv-channel">
+                        <div class="tv-channel-title">
+                            <a class="d-flex align-items-center" href="#"><img class="mr-2" src="images/rossia1_logo.png" alt="">Россия 1</a>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">06:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Русское лото</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">07:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Пусть говорят</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start active">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">09:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Каникулы</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">12:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Х/ф Холоп</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">13:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Судьба человека с&nbsp;Борисом Корчевниковым</a></span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-sm-4 col-md-4 col-xl-2">
+                    <div class="card border-0 rounded-0 mb-4 tv-channel">
+                        <div class="tv-channel-title">
+                            <a class="d-flex align-items-center" href="#"><img class="mr-2" src="images/rossia1_logo.png" alt="">Россия 1</a>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">06:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Русское лото</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">07:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Пусть говорят</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start active">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">09:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Каникулы</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">12:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Х/ф Холоп</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">13:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Судьба человека с&nbsp;Борисом Корчевниковым</a></span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-sm-4 col-md-4 col-xl-2">
+                    <div class="card border-0 rounded-0 mb-4 tv-channel">
+                        <div class="tv-channel-title">
+                            <a class="d-flex align-items-center" href="#"><img class="mr-2" src="images/rossia1_logo.png" alt="">Россия 1</a>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">06:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Русское лото</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">07:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Пусть говорят</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start active">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">09:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Каникулы</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">12:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Х/ф Холоп</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">13:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Судьба человека с&nbsp;Борисом Корчевниковым</a></span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-sm-4 col-md-4 col-xl-2">
+                    <div class="card border-0 rounded-0 mb-4 tv-channel">
+                        <div class="tv-channel-title">
+                            <a class="d-flex align-items-center" href="#"><img class="mr-2" src="images/rossia1_logo.png" alt="">Россия 1</a>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">06:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Русское лото</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">07:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Пусть говорят</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start active">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">09:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Каникулы</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">12:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Х/ф Холоп</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">13:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Судьба человека с&nbsp;Борисом Корчевниковым</a></span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-sm-4 col-md-4 col-xl-2">
+                    <div class="card border-0 rounded-0 mb-4 tv-channel">
+                        <div class="tv-channel-title">
+                            <a class="d-flex align-items-center" href="#"><img class="mr-2" src="images/rossia1_logo.png" alt="">Россия 1</a>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">06:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Русское лото</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">07:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Пусть говорят</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start active">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">09:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Каникулы</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">12:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Х/ф Холоп</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">13:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Судьба человека с&nbsp;Борисом Корчевниковым</a></span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-sm-4 col-md-4 col-xl-2">
+                    <div class="card border-0 rounded-0 mb-4 tv-channel">
+                        <div class="tv-channel-title">
+                            <a class="d-flex align-items-center" href="#"><img class="mr-2" src="images/rossia1_logo.png" alt="">Россия 1</a>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">06:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Русское лото</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">07:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Пусть говорят</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start active">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">09:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Каникулы</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">12:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Х/ф Холоп</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">13:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Судьба человека с&nbsp;Борисом Корчевниковым</a></span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-sm-4 col-md-4 col-xl-2">
+                    <div class="card border-0 rounded-0 mb-4 tv-channel">
+                        <div class="tv-channel-title">
+                            <a class="d-flex align-items-center" href="#"><img class="mr-2" src="images/rossia1_logo.png" alt="">Россия 1</a>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">06:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Русское лото</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">07:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Пусть говорят</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start active">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">09:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Каникулы</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">12:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Х/ф Холоп</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">13:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Судьба человека с&nbsp;Борисом Корчевниковым</a></span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-sm-4 col-md-4 col-xl-2">
+                    <div class="card border-0 rounded-0 mb-4 tv-channel">
+                        <div class="tv-channel-title">
+                            <a class="d-flex align-items-center" href="#"><img class="mr-2" src="images/rossia1_logo.png" alt="">Россия 1</a>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">06:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Русское лото</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">07:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Пусть говорят</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start active">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">09:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Каникулы</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">12:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Х/ф Холоп</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">13:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Судьба человека с&nbsp;Борисом Корчевниковым</a></span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-sm-4 col-md-4 col-xl-2">
+                    <div class="card border-0 rounded-0 mb-4 tv-channel">
+                        <div class="tv-channel-title">
+                            <a class="d-flex align-items-center" href="#"><img class="mr-2" src="images/rossia1_logo.png" alt="">Россия 1</a>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">06:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Русское лото</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">07:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Пусть говорят</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start active">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">09:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Каникулы</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">12:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Х/ф Холоп</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">13:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Судьба человека с&nbsp;Борисом Корчевниковым</a></span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-sm-4 col-md-4 col-xl-2">
+                    <div class="card border-0 rounded-0 mb-4 tv-channel">
+                        <div class="tv-channel-title">
+                            <a class="d-flex align-items-center" href="#"><img class="mr-2" src="images/rossia1_logo.png" alt="">Россия 1</a>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">06:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Русское лото</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">07:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Пусть говорят</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start active">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">09:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Каникулы</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">12:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Х/ф Холоп</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">13:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Судьба человека с&nbsp;Борисом Корчевниковым</a></span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-sm-4 col-md-4 col-xl-2">
+                    <div class="card border-0 rounded-0 mb-4 tv-channel">
+                        <div class="tv-channel-title">
+                            <a class="d-flex align-items-center" href="#"><img class="mr-2" src="images/rossia1_logo.png" alt="">Россия 1</a>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">06:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Русское лото</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">07:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Пусть говорят</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start active">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">09:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Каникулы</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">12:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Х/ф Холоп</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">13:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Судьба человека с&nbsp;Борисом Корчевниковым</a></span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-sm-4 col-md-4 col-xl-2">
+                    <div class="card border-0 rounded-0 mb-4 tv-channel">
+                        <div class="tv-channel-title">
+                            <a class="d-flex align-items-center" href="#"><img class="mr-2" src="images/rossia1_logo.png" alt="">Россия 1</a>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">06:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Русское лото</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">07:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Пусть говорят</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start active">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">09:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Каникулы</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">12:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Х/ф Холоп</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">13:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Судьба человека с&nbsp;Борисом Корчевниковым</a></span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-sm-4 col-md-4 col-xl-2">
+                    <div class="card border-0 rounded-0 mb-4 tv-channel">
+                        <div class="tv-channel-title">
+                            <a class="d-flex align-items-center" href="#"><img class="mr-2" src="images/rossia1_logo.png" alt="">Россия 1</a>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">06:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Русское лото</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">07:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Пусть говорят</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start active">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">09:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Каникулы</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">12:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Х/ф Холоп</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">13:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Судьба человека с&nbsp;Борисом Корчевниковым</a></span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-sm-4 col-md-4 col-xl-2">
+                    <div class="card border-0 rounded-0 mb-4 tv-channel">
+                        <div class="tv-channel-title">
+                            <a class="d-flex align-items-center" href="#"><img class="mr-2" src="images/rossia1_logo.png" alt="">Россия 1</a>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">06:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Русское лото</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">07:30</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Пусть говорят</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start active">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">09:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Каникулы</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">12:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Х/ф Холоп</a></span> </div>
+                        </div>
+                        <div class="p-1 d-flex align-items-start">
+                            <div> <span class="tv-time align-top mr-2 text-14 text-muted">13:00</span> </div>
+                            <div class="tv-program"> <span class="align-top"><a href="#">Судьба человека с&nbsp;Борисом Корчевниковым</a></span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <div class="clearfix"></div>
+    <footer class="clearfix mt-2">
+        <nav class="navbar navbar-expand-sm">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item mr-2"> <a class="nav-link" href="#">О сервисе</a> </li>
+                <li class="nav-item mr-2"> <a class="nav-link" href="#">Политика конфиденциальности</a> </li>
+                <li class="nav-item mr-2"> <a class="nav-link" href="#">Частые вопросы</a> </li>
+                <li class="nav-item mr-2"> <a class="nav-link" href="#">Связаться с нами</a> </li>
+            </ul> <span class="float-right"><a href="https://limehd.tv" class="text-white-50">ООО Лайм Эйч Ди, 2020</a></span> </nav>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

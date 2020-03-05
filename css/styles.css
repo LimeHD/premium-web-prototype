@@ -1,0 +1,250 @@
+  @font-face {
+    font-family: 'SegoeUI';
+    src: url('../fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.eot');
+    src: url('../fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.eot?iefix') format('eot'),
+        url('../fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.woff') format('woff'),
+        url('../fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('../fonts/SegoeUI/SegoeUIBold/SegoeUIBold.eot');
+    src: url('../fonts/SegoeUI/SegoeUIBold/SegoeUIBold.eot?iefix') format('eot'),
+        url('../fonts/SegoeUI/SegoeUIBold/SegoeUIBold.woff') format('woff'),
+        url('../fonts/SegoeUI/SegoeUIBold/SegoeUIBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('../fonts/SegoeUI/SegoeUILight/SegoeUILight.eot');
+    src: url('../fonts/SegoeUI/SegoeUILight/SegoeUILight.eot?iefix') format('eot'),
+        url('../fonts/SegoeUI/SegoeUILight/SegoeUILight.woff') format('woff'),
+        url('../fonts/SegoeUI/SegoeUILight/SegoeUILight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Globals */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    font-family: 'SegoeUI';
+    color: #ffffff;
+    background: #2a2a2a;
+	margin-bottom: 60px;    
+}
+
+.container-fluid {
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a, a:hover {
+    color: #ffffff;
+}
+
+.card {
+    background: #444444;
+}
+
+/* Navs */
+
+.nav-link {
+    white-space: nowrap;
+    color: #ffffff !important;
+}
+
+.nav-item.active {
+    font-weight: 600;
+}
+
+.tv-time,
+.tv-program {
+    padding-left: 0.3em;
+}
+
+.active .tv-program {
+    font-weight: 600;
+}
+
+.tv-program-list .active,
+.tv-channel-list .active {
+    background: #373737;
+}
+
+.tv-channel-filter .active {
+    background: #414141;
+}
+
+.tv-channel {
+    background: #2e2e2e;
+}
+
+.tv-program-list,
+.tv-program-list .card {
+    background: #000000;
+}
+
+.tv-channel-title {
+    background: #414141;
+}
+
+.tv-channels-list .card {
+    background: #414141;
+}
+
+.tv-channel-list .card {
+    background: #2e2e2e;
+}
+
+.tv-channels-list.card:hover .inner-overlay {
+    opacity: 1;
+}
+
+.tv-channel-program {
+    width: 80%;
+}
+
+.card-time, 
+.tv-time, 
+.tv-program-list .mute span, 
+.tv-program-list .mute a {
+    color: rgba(255,255,255,0.5)!important;
+}
+
+.card-title {
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.card-sub {
+    font-size: 0.9em;
+    line-height: 1;
+}
+
+.card-time {
+    font-size: 0.7em;
+    font-weight: 100;
+    line-height: 1.5;
+    margin-top: 0.5em;
+    text-align: left;
+}
+
+.card-img-overlay {
+    padding: 0.5rem 0.8rem;
+}
+
+.navbar-main li {
+    position: relative;
+    display: block;
+    text-transform: uppercase; 
+}
+
+.navbar-main li:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.navbar-main .active:after {
+    position: absolute;
+    top: 90%;
+    left: 3%;
+    width: 3em;
+    content: '';
+    border-bottom: blue 4px solid;
+}
+
+/* Channel Nav */
+.channel-nav li {
+    position: relative;
+}
+
+.channel-nav li:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.channel-nav a:hover {
+    text-decoration: none;
+}
+
+.channel-nav .active:after {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 40%;
+    content: '';
+    border-bottom: red 4px solid;
+}
+
+/* Channels List */
+.channels-list {
+    list-style: none;
+}
+
+.channels-list li img {
+    display: block;
+    clear: both;
+    height: auto;
+}
+
+.channels-list .active img {
+    outline: 2px solid white;
+}
+
+.inner-overlay {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 0.8rem;
+    opacity: 0;
+    background: rgba(23, 23, 23, 0.3);
+    backdrop-filter: blur(15px);
+}
+
+.inner-overlay a, .inner-overlay p {
+    font-size: 0.6em;
+    line-height: 1.5;
+}
+
+.inner-overlay a {
+    text-decoration: underline;
+}
+
+.card-fav {
+    margin-top: -0.5em;
+}
+
+.card-fav a {
+    font-size: 0.8em;
+}
+
+footer {
+	width: 100%;
+    background: #474747;
+	position: absolute;
+	bottom: 0;    
+}
+
+footer p {
+    margin-bottom: 0.25rem;
+}
+
+footer a {
+    line-height: 1.35;
+    text-decoration: underline;
+}
+
