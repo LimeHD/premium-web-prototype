@@ -61,6 +61,7 @@ a, a:hover {
 .nav-link {
     white-space: nowrap;
     color: #ffffff !important;
+    font-size: 0.8em;
 }
 
 .nav-item.active {
@@ -122,18 +123,18 @@ a, a:hover {
 }
 
 .card-title {
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 400;
     margin-bottom: 0;
 }
 
 .card-sub {
-    font-size: 0.9em;
+    font-size: 0.7em;
     line-height: 1;
 }
 
 .card-time {
-    font-size: 0.7em;
+    font-size: 0.6em;
     font-weight: 100;
     line-height: 1.5;
     margin-top: 0.5em;
@@ -160,7 +161,7 @@ a, a:hover {
     left: 3%;
     width: 3em;
     content: '';
-    border-bottom: blue 4px solid;
+    border-bottom: #3651f3 4px solid;
 }
 
 /* Channel Nav */
@@ -246,5 +247,9 @@ footer p {
 footer a {
     line-height: 1.35;
     text-decoration: underline;
+    font-size: 0.8em;
 }
 
+footer .navbar ul {
+	margin-left: -1.5em;
+}
